@@ -1,0 +1,16 @@
+<zk>
+	<!-- window apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('com.everis.component.ZKWebTest.MyViewModel')"
+		validationMessages="@id('vmsgs')">
+		<hlayout>count: <label value="@load(vm.count)" /></hlayout>
+		<button label="add" onClick="@command('cmd')"/>
+		<tree></tree>
+	</window-->
+	<window apply="com.everis.component.ZKWebTest.TreeController">
+	<tree id="tree" rows="7" multiple="true" checkmark="true">
+        <treecols>
+            <treecol label="Path"/>
+        </treecols>
+    </tree>
+	</window>
+</zk>
